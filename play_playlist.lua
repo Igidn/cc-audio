@@ -35,7 +35,7 @@ local TRACKS = {
 }
 -- =========================================================================
 
-local start = math.floor(tonumber(...) or 1)
+local start = math.floor(tonumber((...) ) or 1)
 if start < 1 or start > #TRACKS then start = 1 end
 
 local total_bytes = 0
